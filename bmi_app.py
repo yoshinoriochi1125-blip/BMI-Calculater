@@ -1,4 +1,4 @@
-t.write("使い方：身長と体重を入れてボタンを押すだけでBMIがわかる")
+st.write("使い方：身長と体重を入れてボタンを押すだけでBMIがわかる")
 
 import streamlit as st
 
@@ -30,4 +30,5 @@ import pandas as pd
 
 data = pd.DataFrame({"カテゴリ": ["低体重", "普通体重", "肥満"], "BMI範囲": [18.5, 25, 30]})
 st.bar_chart(data.set_index("カテゴリ"))
+
 
